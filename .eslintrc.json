@@ -4,7 +4,11 @@
     "node": true,
     "es2021": true
   },
-  "extends": ["eslint:recommended", "@typescript-eslint/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "@typescript-eslint/recommended",
+    "prettier" // Disable ESLint rules that conflict with Prettier
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
